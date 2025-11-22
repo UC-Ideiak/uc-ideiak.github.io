@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="h-full" lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/src/assets/UC_logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UC Ideiak | Bienvenidos</title>
+  <script defer type="module" src="/src/main.ts"></script>
+</head>
+
+<body class="min-h-screen bg-neutral-500">
+  <nav class="h-20 w-[375px] m-auto pt-4 flex justify-between items-center md:w-[80%] md:h-40">
+    <a href="/">
+      <img class="size-40 pt-4 bg-auto md:size-50" src="/src/assets/UC_brand.png" alt="Logo de UC Ideiak" />
+    </a>
+    <a href="/login.html">
+      <button
+        class="hidden border-2 border-white font-semibold rounded-3xl cursor-pointer bg-orange-200 hover:bg-orange-400 w-[100px] py-1 text-xs text-neutral-700">
+        Área Cliente
+      </button>
+    </a>
+  </nav>
+
+  <div class="flex min-h-full flex-col justify-center px-6 py-8 lg:px-8">
+    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+      <h2 class="mt-4 py-2 text-center text-xl font-bold tracking-tight text-neutral-700">
+        Formulario de contacto
+      </h2>
+    </div>
+
+    <div class="mt-4 sm:mx-auto sm:w-full sm:max-w-sm">
+      <form class="space-y-6" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="e59dfe19-fdec-4281-a497-0b8a04a4cedf" />
+        <div>
+          <label for="name" class="block mt-4 text-sm/6 font-medium text-gray-700">Nombre</label>
+          <div class="mt-2">
+            <input id="name" type="text" name="name" required autocomplete="name"
+              class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-orange-900 outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-white sm:text-sm/6" />
+          </div>
+        </div>
+        <div>
+          <label for="email" class="block text-sm/6 font-medium text-gray-700">Correo electrónico</label>
+          <div class="mt-2">
+            <input id="email" type="email" name="email" required autocomplete="email"
+              class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-orange-900 outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-white sm:text-sm/6" />
+          </div>
+        </div>
+        <div class="mb-10">
+          <div class="flex items-center justify-between">
+            <label for="message" class="block text-sm/6 font-medium text-gray-700">Comentarios</label>
+          </div>
+          <div class="mt-2">
+            <textarea id="message" name="message" required rows="3"
+              class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-orange-900 outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-white sm:text-sm/6"></textarea>
+          </div>
+        </div>
+        <div>
+          <button
+            class="border-2 border-white font-semibold flex w-full justify-center rounded-md bg-orange-200 px-3 py-1.5 text-sm/6 text-neutral-700 hover:bg-orange-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500 cursor-pointer"
+            type="submit">
+            Enviar
+          </button>
+        </div>
+        <input type="hidden" name="redirect" value="https://www.ucideiak.com/thanks.html" />
+      </form>
+    </div>
+  </div>
+
+  <footer class="flex md:border-t border-orange-900">
+    <p class="mx-auto font-semibold text-xs text-orange-900 py-4">
+      © 2023 UC Ideiak. Derechos reservados.
+    </p>
+  </footer>
+</body>
+
+</html>
