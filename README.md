@@ -38,7 +38,7 @@ Para el despliegue de la web de utiliza GITHUB-PAGES utilizando el repositorio d
 
 En ese repositorio se crean dos ramas
 
-- MAIN con el proyecto proncipal
+- MAIN con el proyecto principal
 - GH-PAGES que contiene la carpeta DIST obtenida al hacer BUILD
 
 De esta forma se mantienen ambas ramas por separado y se simplifica el desarrollo.
